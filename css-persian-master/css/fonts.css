@@ -1,0 +1,44 @@
+
+@font-face {
+  font-family: 'BTitrBold';
+  src: url('../fonts/BTitrBold.eot?#') format('eot'),  /* IE6–8 */
+       url('../fonts/BTitrBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('../fonts/BTitrBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'BTitrTGEBold';
+  src: url('../fonts/BTitrTGEBold.eot?#') format('eot'),  /* IE6–8 */
+       url('../fonts/BTitrTGEBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('../fonts/BTitrTGEBold.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'BNazanin';
+  src: url('../fonts/BNazanin.eot?#') format('eot'),
+    /* IE6–8 */
+    url('../fonts/BNazanin.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BNazanin.ttf') format('truetype');
+  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'IranianSans';
+  src: url('../fonts/IranianSans.eot?#') format('eot'),
+    /* IE6–8 */
+    url('../fonts/IranianSans.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IranianSans.ttf') format('truetype');
+  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+@font-face {
+  font-family: 'BRoya';
+  src: url('../fonts/BRoya.eot?#') format('eot'),
+    /* IE6–8 */
+    url('../fonts/BRoya.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/BRoya.ttf') format('truetype');
+  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
