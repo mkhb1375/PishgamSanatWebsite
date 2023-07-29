@@ -158,13 +158,12 @@ html {
     right: 0;
 }
 .back-color {
-    padding: 1vh;
-   margin-top: 10vh;
+  
  background-color:aliceblue;
 }
 
 .titles{
-    color:rgb(97, 55, 0)
+    color:rgb(64, 36, 0)
 }
 .back-text{
     background-color: rgba(250, 235, 215, 0.333);

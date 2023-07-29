@@ -56,7 +56,7 @@ export default function Body(){
     return(
         <div  >
             <ImageSlider />
-            <div className="back-color">
+            <div className="back-color p-3 lg:my-[10vh] my-[20vh] ">
             <h1  id="services" className="text-center text-[2rem] mt-2 header-farsi">خدمات پیشگام&nbsp;صنعت&nbsp;توس</h1>
             <SlideFromRight id="1" image="src/assets/pic-1.jpg" title="اسکن&nbsp;سه&nbsp;بعدی" text={text1} />
             <SlideFromRight id="2" image="src/assets/pic-2.jpg" title="مدلسازی" text=" مدلسازی سه بعدی قطعات قبل از تولید آن به شما کمک می کند تا تصویر سه بعدی از محصول نهایی داشته باشید تا بتوانید مشکلات و عیوب آن را بر اساس نیاز خود بر طرف کنید از فایل های خروجی نرم افزارهای طراحی میتوان جهت استفاده در تحلیل یا ساخت  استفاده کرد" />
