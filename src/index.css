@@ -6,8 +6,9 @@
 /* font */
 
 header {
-    font-family: "Anton" ,serf ;
+    font-family: "Anton" ,serif ;
     direction: ltr;
+    
 }
 
 
@@ -30,6 +31,11 @@ body{
     font-family: "Anton" ,serf ;
 }
 
+.eng2{
+    direction: ltr;
+    font-family: sans-serif;
+}
+
 /* Show arrows */
 .prev-arrow,
 .next-arrow {
@@ -41,7 +47,7 @@ body{
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    color: rgb(172, 56, 27);
+    color: white;
     
     
     line-height: 1;
@@ -51,7 +57,7 @@ body{
 .prev-arrow:hover ,
 .next-arrow:hover {
     font-weight: bold;
-    color: white;
+    color: rgb(172, 56, 27);
 }
 .prev-arrow {
     
@@ -114,20 +120,14 @@ background-color: rgba(0, 0, 0, 0.601);
 
 }
 
-/* .slide-left-show {
-    position: absolute;
-        left: 0;
-        transition: left 1.5s;
-    
-}
 
-.slide-left-hide {
-    position: absolute;
-        left: -80vw;
-    
-    
-} */
 
 html, body {
     overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+    
 }
