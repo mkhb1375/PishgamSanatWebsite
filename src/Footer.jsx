@@ -8,7 +8,7 @@ export default function Footer(){
             <div className=" m-2 p-1">
                 <p className="text-center alight-right  m-1 ">کلیه حقوق برای شرکت پیشگام صنعت توس محفوظ است </p>
                 <p className="text-center alight-right  m-1 "> آدرس: خراسان رضوی،مشهد،شهرک صنعتی توس، فلزتراشان ۳، پلاک ۴۵ </p>
-                <p className="text-center alight-right  m-1 "> تلفن:09158579112 </p>
+                <p className="text-center alight-right  m-1 "> تلفن:09157877836 </p>
                 
             </div>
            

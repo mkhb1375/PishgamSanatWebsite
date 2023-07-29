@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <div>
+    <div >
       <Header />
       <div className="  z-[2] lg:w-[50vw]  mx-auto bg-[white] text-center flex-wrap justify-between items-baseline flex  header-farsi text-[1.3rem]">
         <a className=' hover:text-borderColor inline-block mx-4' href="#services" >
@@ -34,8 +34,8 @@ function App() {
          <img src="src/assets/whatsapp.png" alt="whatsapp icon" />
         </a>
       </div>
-      <a className='fixed header-farsi flex gap-2.5 right-2 bottom-[1px] items-center lg:hover:scale-[1.1]' href="tel:09158579112" target="_blank" rel="noopener noreferrer">
-        <h2>09158579112</h2>
+      <a className='fixed header-farsi flex gap-2.5 right-2 bottom-[1px] items-center lg:hover:scale-[1.1]' href="tel:09157877836" target="_blank" rel="noopener noreferrer">
+        <h2>09157877836</h2>
         <img className='inline-block lg:w-[30px] lg:h-[30px] w-[60px] h-[60px] my-1  ' src="src/assets/telephone.png" alt="telephone icon" />
       </a>
     </div>

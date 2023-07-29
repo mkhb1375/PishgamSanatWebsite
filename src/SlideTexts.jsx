@@ -42,27 +42,25 @@ export default function SlideTexts(props) {
             className={`${isVisible
                     ? `slide-${direction}-show`
                     : `slide-${direction}-hide`
-                } relative lg:mx-4 lg:mb-[15vh]  border-t-[5px] lg:border-t-[2px] border-t border-borderColor border-solid   lg:p-2 py-2 my-2 block before:content-['']
-            before:absolute z before:opacity-20  
-            before:bg-[url(https://studio9.co/wp-content/uploads/Twill-05.png)]
-            before:bg-repeat before:left-0 before:top-0 before:bottom-0 before:right-0 before:z-[-1] rounded`}
+                } relative  lg:mb-[7vh]  border-t-[5px] lg:border-t-[2px] border-t border-borderColor border-solid  bg-customWhite  py-2 my-2 block 
+           rounded w-fit back-text mx-auto`}
         >
             <div
                 id={props.id}
                 className={`block w-full flex flex-wrap ${direction === "right"
                         ? "justify-end flex-row-reverse"
                         : "justify-start"
-                    } lg:px-[10vw] lg:mt-auto`}
+                    } lg:mt-auto`}
             >
-                <div className="w-[100vw] lg:w-[30vw] p-4 mx-[2vw]">
+                <div className=" lg:w-[30vw] mx-[2vw]">
                     <h2
                         style={{ fontWeight: "bold" }}
-                        className="header-farsi text-[1.5rem] p-1 m-2 text-center"
+                        className="header-farsi text-[1.5rem] p-1 m-2 text-center titles"
                     >
                         {props.title}
                     </h2>
 
-                    <p className="paragraph text-[1.15rem] lg:text-[1.3rem]">
+                    <p className="paragraph text-[1.25rem] lg:text-[1.3rem]">
                         {props.text}
                     </p>
                 </div>

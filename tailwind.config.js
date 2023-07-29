@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         borderColor: 'rgb(172, 56, 27)',
         myGray: 'rgb(180, 180, 180)',
+        customWhite: 'rgba(255, 255, 255, 0.33)',
         // Add other custom colors here if needed
       },
       screens: {

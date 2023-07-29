@@ -77,7 +77,7 @@ export default function ImageSlider() {
     }, [currentSlide]); 
 
     return (
-        <div className="slider-container w-full  mx-auto overflow-hidden border-b border-borderColor border-solid  border-b-[10px] lg:border-b-[5px]  relative">
+        <div className="slider-container w-full  mx-auto overflow-hidden border-b border-borderColor border-solid  border-b-[10px] lg:border-b-[5px] bg-[black]  relative">
             <Slider {...settings} ref={sliderRef} className="slider-wrapper">
                 {images.map((image, index) => (
                     <div key={index} className="slide relative">

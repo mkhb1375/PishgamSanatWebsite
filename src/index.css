@@ -13,7 +13,7 @@ header {
 
 
 .header-farsi{
-    font-family: "BTitrBold";
+    font-family: "BSinaBold";
     direction: rtl
 }
 
@@ -22,7 +22,7 @@ header {
 
 
 body{
-    font-family: "BRoya";
+    font-family: "BMitra";
     text-align: right;
     direction: rtl
 }
@@ -33,7 +33,7 @@ body{
 
 .eng2{
     direction: ltr;
-    font-family: sans-serif;
+    font-family: serif;
 }
 
 /* Show arrows */
@@ -130,4 +130,42 @@ html, body {
 html {
     scroll-behavior: smooth;
     
+}
+
+
+/* Add these CSS styles to your global CSS or the component's CSS file */
+
+.customer-slider {
+    overflow: hidden;
+}
+
+.slick-slide>div {
+    margin: 0 4px;
+    /* Add some margin between the slides */
+}
+
+.customer-slide {
+    transition: transform 0.3s ease;
+    /* Add sliding transition effect */
+}
+
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+.back-color {
+    padding: 1vh;
+   margin-top: 10vh;
+ background-color:aliceblue;
+}
+
+.titles{
+    color:rgb(97, 55, 0)
+}
+.back-text{
+    background-color: rgba(250, 235, 215, 0.333);
 }

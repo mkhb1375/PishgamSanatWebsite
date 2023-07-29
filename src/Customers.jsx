@@ -1,21 +1,42 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Customer({ customers }) {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        beforeChange: (current, next) => {
+            // Do something before the slide changes (optional)
+        },
+        afterChange: (current) => {
+            // Do something after the slide changes (optional)
+        },
+    };
+
     return (
-        <div id="customers" className="mx-[auto] text-center text-[1.5rem] mt-[10vh] mb-[5vh]  block border-[8px] lg:border-[2px] border border-borderColor border-solid p-3 rounded lg:w-[70vw] ">
-            <h1 className="header-farsi">برخی از مشتریان</h1>
-            <div className="flex text-center justify-center items-baseline flex-wrap">
+        <div id="customers" className="mx-auto  text-[1.5rem] text-center lg:w-[70vw] bg-white">
+            <h1  className="header-farsi my-10">برخی از مشتریان</h1>
+           
+            <Slider {...settings} className="customer-slider">
                 {customers.map((customer, index) => (
-                    <div key={index} className="m-4 p-2">
+                    <div  key={index} className="customer-slide flex items-baseline ">
                         <img
-                            src={customer.logoUrl} 
-                            alt={customer.companyName} 
-                            style={{ width: "300px", height: "auto" }}
+                            className="block text-center mx-auto"
+                            src={customer.logoUrl}
+                            alt={customer.companyName}
+                            style={{ width:"auto" , height: "95px" }}
                         />
-                        <p>{customer.companyName}</p>
+                        <p className="block text-center mx-auto ">{customer.companyName}</p>
                     </div>
                 ))}
-            </div>
+            </Slider>
         </div>
     );
 }
