@@ -10,13 +10,23 @@ function App() {
   return (
     <div >
       <Header />
-      <div className="  z-[2] lg:w-[50vw]  mx-auto bg-[white] text-center flex-wrap justify-between items-baseline flex  header-farsi text-[1.3rem]">
+      <div className=" mb-2  z-[2] lg:w-[50vw]  mx-auto bg-[white] text-center text-[0.8rem]  justify-between items-baseline flex  header-farsi  lg:text-[0.9rem]">
+        <a className=' hover:text-borderColor  inline-block mx-4' href="#main" >
+          صفحه‌اصلی
+        </a>
         <a className=' hover:text-borderColor inline-block mx-4' href="#services" >
           خدمات
         </a>
+       
 
         <a className= ' hover:text-borderColor inline-block mx-4' href="#customers" >
           مشتریان
+        </a>
+        <a className=' hover:text-borderColor inline-block mx-4' href="#photos" >
+          گالری‌ تصاویر
+        </a>
+        <a className=' hover:text-borderColor inline-block mx-4' href="#contacts" >
+          تماس با ما
         </a>
       </div>
       <Body />
@@ -34,9 +44,9 @@ function App() {
          <img src="src/assets/whatsapp.png" alt="whatsapp icon" />
         </a>
       </div>
-      <a className='fixed header-farsi flex gap-2.5 right-2 bottom-[1px] items-center lg:hover:scale-[1.1]' href="tel:09157877836" target="_blank" rel="noopener noreferrer">
-        <h2>09157877836</h2>
-        <img className='inline-block lg:w-[30px] lg:h-[30px] w-[60px] h-[60px] my-1  ' src="src/assets/telephone.png" alt="telephone icon" />
+      <a className=' fixed header-farsi flex gap-2.5 right-2 bottom-[1px] items-center lg:hover:scale-[1.1]' href="tel:09157877836" target="_blank" rel="noopener noreferrer">
+        <h2 className='tel'>09157877836</h2>
+        <img className='  inline-block lg:w-[30px] lg:h-[30px] w-[60px] h-[60px] my-1  ' src="src/assets/telephone.png" alt="telephone icon" />
       </a>
     </div>
   )

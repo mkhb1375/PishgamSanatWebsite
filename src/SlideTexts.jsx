@@ -5,7 +5,7 @@ export default function SlideTexts(props) {
     const image = <img src={props.image} alt="image" />;
     const imageContainer = (
         <div
-            className="w-[100vw] lg:w-[40vw] w-auto hover:cursor-pointer rounded hover:border-borderColor transition-transform duration-300 transform-gpu hover:scale-105"
+            className="w-[100vw]   lg:w-[40vw]  hover:cursor-pointer rounded hover:border-borderColor transition-transform duration-300 transform-gpu hover:scale-105"
         >
             {image}
         </div>
@@ -42,12 +42,15 @@ export default function SlideTexts(props) {
             className={`${isVisible
                     ? `slide-${direction}-show`
                     : `slide-${direction}-hide`
-                } relative  lg:mb-[7vh]  border-t-[5px] lg:border-t-[2px] border-t border-borderColor border-solid  bg-customWhite  py-2 my-2 block 
-           rounded w-fit back-text mx-auto`}
+                } relative  lg:mb-[7vh]  border-t-[5px] lg:border-t-[2px] border-t border-borderColor border-solid   before:content-[''] 
+            before:absolute z before:opacity-25  
+            before:bg-[url(https://studio9.co/wp-content/uploads/Twill-05.png)]
+             before:bg-repeat before:left-0 before:top-0 before:bottom-0 before:right-0  py-2 my-2 block 
+             bg-white mx-auto`}
         >
             <div
                 id={props.id}
-                className={`block w-full flex flex-wrap ${direction === "right"
+                className={`block w-full lg:w-[80vw] mx-auto flex flex-wrap ${direction === "right"
                         ? "justify-end flex-row-reverse"
                         : "justify-start"
                     } lg:mt-auto`}
@@ -60,7 +63,7 @@ export default function SlideTexts(props) {
                         {props.title}
                     </h2>
 
-                    <p className="paragraph text-[1.25rem] lg:text-[1.3rem]">
+                    <p className="paragraph text-[1.1rem]  text-justify">
                         {props.text}
                     </p>
                 </div>

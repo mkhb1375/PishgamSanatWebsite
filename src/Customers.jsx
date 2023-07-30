@@ -31,7 +31,7 @@ export default function Customer({ customers }) {
                             className="block text-center mx-auto"
                             src={customer.logoUrl}
                             alt={customer.companyName}
-                            style={{ width:"auto" , height: "95px" }}
+                            style={{ width:"auto" , height: "90px" , maxWidth:"225px" }}
                         />
                         <p className="block text-center mx-auto ">{customer.companyName}</p>
                     </div>
