@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function Gallery() {
     const customers = [
-        {
-            logoUrl: "src/assets/gl1.jpg",
-            companyName: ""
-        },
         {
             logoUrl: "src/assets/gl2.jpg",
             companyName: ""
@@ -45,7 +41,12 @@ export default function Gallery() {
 
     // State to manage the visibility of the full-screen image
     const [showFullScreenImage, setShowFullScreenImage] = useState(false);
-    const [selectedImage, setSelectedImage] = useState("");
+    const [selectedImage, setSelectedImage] = useState(customers[0].logoUrl);
+
+    // useEffect to show the first image in the full-screen container on component mount
+    useEffect(() => {
+        setShowFullScreenImage(true);
+    }, []);
 
     // Function to handle when an image is clicked
     const handleImageClick = (imageUrl) => {
@@ -60,7 +61,7 @@ export default function Gallery() {
 
     return (
         <div id="customers" className="my-10 mx-auto text-white  lg:text-[1.3rem]  text-[0.9rem] text-center lg:w-[90vw] bg-white   ">
-            <h1 className="header-farsi m-4 p-2">گالری تصاویر</h1>
+            <h1 className="header-farsi m-4 p-2 text-black">گالری تصاویر</h1>
             <Slider {...settings} className="customer-slider border-4 border-borderColor bg-black rounded">
                 {customers.map((customer, index) => (
                     <div
@@ -80,15 +81,17 @@ export default function Gallery() {
             </Slider>
 
             {/* Full-screen image overlay */}
-            {showFullScreenImage && (
-                <div className="full-screen-image-overlay " onClick={closeFullScreenImage}>
-                    <img
-                        className="full-screen-image mx-auto  my-10 rounded border-4 border-borderColor "
-                        src={selectedImage}
-                        alt="Enlarged View"
-                    />
-                </div>
-            )}
+            <div
+                className="full-screen-image-overlay"
+                onClick={closeFullScreenImage}
+                style={{ display: showFullScreenImage ? "block" : "none" }}
+            >
+                <img
+                    className="full-screen-image mx-auto my-10 rounded border-4 border-borderColor"
+                    src={selectedImage}
+                    alt="Enlarged View"
+                />
+            </div>
         </div>
     );
 }
