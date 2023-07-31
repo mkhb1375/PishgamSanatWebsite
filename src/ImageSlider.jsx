@@ -77,26 +77,27 @@ export default function ImageSlider() {
     }, [currentSlide]); 
 
     return (
-        <div className="slider-container w-full  mx-auto overflow-hidden border-b border-borderColor border-solid  border-b-[10px] lg:border-b-[5px] bg-[black]  relative">
+        <div className="slider-container w-full  mx-auto overflow-hidden border-b border-borderColor border-solid border-b-[10px] lg:border-b-[5px] bg-[black]  relative">
             <Slider {...settings} ref={sliderRef} className="slider-wrapper">
                 {images.map((image, index) => (
                     <div key={index} className="slide relative">
                         <img
-                            className="slider-image w-full lg:h-[80vh] h-[50vh] object-cover object-center"
+                            className="slider-image w-full lg:h-[73vh] 2xl:h-[78vh] 3xl:h-[81vh] h-[67vh]  py-[15vh] lg:py-0  object-cover object-center"
                             src={image}
                             alt={`Image ${index + 1}`}
                         />
                     </div>
                 ))}
             </Slider>
-            <span className={`${captionClass} text-[1.5rem] w-[70vw] lg:w-max`}>
+            <span className={`${captionClass} text-[1.5rem] w-[80vw]  lg:w-max`}>
                 {captions[currentSlide]}
             </span>
             <button className="prev-arrow" onClick={handlePrevClick}>
-                &lArr;
+                <span style={{ transform:"rotate(-90deg)" , display:"inline-block"}} >⌃</span>
+
             </button>
             <button className="next-arrow" onClick={handleNextClick}>
-                &rArr;
+                <span style={{ transform: "rotate(90deg)", display: "inline-block" }} >⌃</span>
             </button>
         </div>
     );

@@ -21,8 +21,8 @@ export default function Customer({ customers }) {
     };
 
     return (
-        <div id="customers" className="mx-auto  text-[1.5rem] text-center lg:w-[70vw] bg-white">
-            <h1  className="header-farsi my-10">برخی از مشتریان</h1>
+        <div id="customers" className="mx-auto mb-[10vh]  text-[1.5rem] text-center lg:w-[70vw] bg-white">
+          
            
             <Slider {...settings} className="customer-slider">
                 {customers.map((customer, index) => (
