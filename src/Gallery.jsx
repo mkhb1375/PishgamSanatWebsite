@@ -22,7 +22,11 @@ export default function Gallery() {
             companyName: ""
         }
     ];
-
+   
+    // Function to show the next slide
+    const nextSlide = () => {
+        sliderRef.current.slickNext();
+    };
     const settings = {
         dots: false,
         infinite: true,
@@ -60,8 +64,15 @@ export default function Gallery() {
     };
 
     return (
-        <div id="customers" className="my-10 mx-auto text-white  lg:text-[1.3rem]  text-[0.9rem] text-center lg:w-[90vw] bg-white   ">
-            <h1 className="header-farsi m-4 p-2 text-black">گالری تصاویر</h1>
+        <div id="customers" className="my-10 mx-auto text-white lg:text-[1.3rem] text-[0.9rem] text-center lg:w-[90vw] bg-white">
+            <h1 className="header-farsi m-4 p-2 text-[1.6rem] text-black">گالری تصاویر</h1>
+            <h1 className="header-farsi m-4 p-2 text-[0.8rem] text-black">برای بزرگنمایی روی تصویر کلیک کنید</h1>
+            {/* Previous and Next buttons */}
+            
+            <button  className="absolute -translate-y-2/4 bg-[rgba(0,0,0,0.5)] text-[white] cursor-pointer text-lg px-4 py-2 border-[none] top-2/4 " onClick={nextSlide}>
+                
+            </button>
+            
             <Slider {...settings} className="customer-slider border-4 border-borderColor bg-black rounded">
                 {customers.map((customer, index) => (
                     <div
@@ -70,12 +81,12 @@ export default function Gallery() {
                         onClick={() => handleImageClick(customer.logoUrl)}
                     >
                         <img
-                            className="block text-center mx-auto"
+                            className="block text-center py-[4vh] w-auto   lg:py-0 mx-auto cursor-pointer lg:border-[black] lg:border-4 lg:hover:border-borderColor rounded mt-5 border-borderColor"
                             src={customer.logoUrl}
                             alt={customer.companyName}
-                            style={{ width: "auto", height: "400px" }}
+                            
                         />
-                        <p className="block text-center mx-auto">{customer.companyName}</p>
+                        <p className="block text-center my-1 mx-auto">{customer.companyName}</p>
                     </div>
                 ))}
             </Slider>
@@ -87,7 +98,7 @@ export default function Gallery() {
                 style={{ display: showFullScreenImage ? "block" : "none" }}
             >
                 <img
-                    className="full-screen-image mx-auto my-10 rounded border-4 border-borderColor"
+                    className="full-screen-image mx-auto my-10  rounded border-4 border-borderColor"
                     src={selectedImage}
                     alt="Enlarged View"
                 />

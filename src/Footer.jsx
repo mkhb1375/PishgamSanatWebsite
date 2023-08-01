@@ -10,7 +10,7 @@ export default function Footer(){
                 <p className="text-right alight-right  border-b-[1px] border-b-[gray] m-3 p-2 ">اطلاعات تماس</p>
                 
                     <p className="text-right alight-right  border-b-[1px] border-b-[gray] text-[0.8rem] lg:text-[1rem] m-3 p-2 ">
-                        <img className="lg:w-[30px] w-[60px] inline-block  mx-1" src="src/assets/location.png" alt="location" /> خراسان رضوی،مشهد،شهرک صنعتی توس، فلزتراشان ۳، پلاک ۴۵ 
+                        <img className="lg:w-[30px] w-[60px] inline-block  mx-1" src="src/assets/location.png" alt="location" /> <a className="hover:font-bold" target="_blank" href="https://nshn.ir/bb_b1qEOVJAgVY">خراسان رضوی،مشهد،شهرک صنعتی توس، فلزتراشان ۳، پلاک ۴۵ </a> 
                       
                        </p>
                 <p className="text-right alight-right   m-3 p-2 ">
@@ -21,7 +21,7 @@ export default function Footer(){
                 <div className="lg:w-[35vw] w-full block p-3 m-3">
 
             <h1 className="text-center  ">موقعیت روی نقشه:</h1>
-                    <span className="block border-2 border-borderColor "><Mymap /> </span> 
+                    <a target="_blank" href="https://nshn.ir/bb_b1qEOVJAgVY" className="block border-4 rounded border-[white] cursor-pointer hover:border-borderColor "><img src="src/assets/map.jpg" alt="map"></img></a> 
                     </div>
 
             </div>
