@@ -2,14 +2,17 @@
 
 import React from "react";
 
+
 export default function Header() {
     
 
     return (
         <>
-            <header id="main" className=" border-b-[10px] lg:border-b-[5px] border-b border-borderColor border-solid  mb-[30px] lg:mb-[10px] ">
+            <header  className="    border-b-[10px] lg:border-b-[5px] border-b border-borderColor border-solid   ">
+
+         
                 <div className=" relative block w-full  
-            
+            pt-[3vh]
                before:content-[''] 
             before:absolute z before:opacity-30  
             before:bg-[url(https://studio9.co/wp-content/uploads/Twill-05.png)]

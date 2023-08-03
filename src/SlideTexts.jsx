@@ -5,7 +5,7 @@ export default function SlideTexts(props) {
     const image = <img src={props.image} alt="image" />;
     const imageContainer = (
         <div
-            className="w-[100vw]   lg:w-[40vw]  hover:cursor-pointer rounded hover:border-borderColor transition-transform duration-300 transform-gpu hover:scale-105"
+            className="w-[100vw]   lg:w-[40vw]  hover:cursor-pointer  hover:border-borderColor transition-transform duration-300 transform-gpu hover:scale-105"
         >
             {image}
         </div>
@@ -42,10 +42,11 @@ export default function SlideTexts(props) {
             className={`${isVisible
                     ? `slide-${direction}-show`
                     : `slide-${direction}-hide`
-                } relative   mb-[7vh]  border-t-[5px] lg:border-t-[2px] border-t border-borderColor border-solid   before:content-[''] 
-            before:absolute z before:opacity-25  
+                } relative   mb-[7vh]     before:content-['']   before:absolute z before:opacity-20  
             before:bg-[url(https://studio9.co/wp-content/uploads/Twill-05.png)]
-             before:bg-repeat before:left-0 before:top-0 before:bottom-0 before:right-0  py-2 block 
+             before:bg-repeat before:left-0 before:top-0 before:bottom-0 before:right-0  before:content-[''] txbg
+            
+              py-3 block 
              bg-white mx-auto`}
         >
             <div
@@ -58,12 +59,14 @@ export default function SlideTexts(props) {
                 <div className=" lg:w-[30vw] mx-[2vw]">
                     <h2
                         style={{ fontWeight: "bold" }}
-                        className="header-farsi text-[1.6rem] lg:text-[1.5rem] p-1 m-2 text-center titles"
+                        className={`header-farsi text-[1.6rem] lg:text-[1.5rem] p-2 m-2 text-center titles
+                       
+                        `}
                     >
                         {props.title}
                     </h2>
 
-                    <p className="paragraph text-[1.2rem] lg:text-[1.1rem]  text-justify">
+                    <p className={`paragraph text-[1.2rem] lg:text-[1.1rem]   text-justify `}>
                         {props.text}
                     </p>
                 </div>

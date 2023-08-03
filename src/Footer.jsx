@@ -29,7 +29,7 @@ export default function Footer(){
             <div className="  lg:py-2 text-center bg-[black] text-[white] text-[0.85rem] border-t-[5px] lg:border-t-[2px] border-t border-borderColor 
         border-solid">
                 <h1 className="lg:px-4 p-2"> Copyright© Pishgam Sanat Toos</h1>
-                <div className="flex lg:ml-[12vw] 2xl:ml-[9vw] 3xl:ml-[7vw] ml-2 justify-end"> <h1 className="mx-2" >  طراحی و اجرا :محمدرضا خطیبی </h1> <a href="https://t.me/mkhb1375"> t.me/mkhb1375</a></div>
+                <div className="flex lg:ml-[12vw] 2xl:ml-[9vw] 3xl:ml-[7vw] ml-2 justify-end"> <h1 className="mx-2" >  طراحی و اجرا :محمدرضا خطیبی </h1> <a className="eng2 hover:font-bold" href="https://t.me/mkhb1375"> t.me/mkhb1375</a></div>
             
             </div>
         </div>

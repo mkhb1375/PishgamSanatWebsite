@@ -39,6 +39,7 @@ body{
     font-family: serif;
 }
 
+
 /* Show arrows */
 .prev-arrow,
 .next-arrow {
@@ -182,8 +183,41 @@ html {
 
 
 
-
+.slick-prev {
+    left: 16px;
+    display: none;
+}
 
 .slick-next {
     right: 16px;
+}
+
+/* Add this class to blur the background when an image is selected */
+/* CSS for the overlay element with the blur effect */
+.overlay-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    /* Make sure the overlay is on top of other content */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity of the overlay as needed */
+    backdrop-filter: blur(5px);
+    /* Adjust the blur intensity as needed */
+    pointer-events: none;
+    /* Allow click-through for underlying elements */
+}
+
+
+
+.txbg{
+    background-color:rgb(251, 250, 243);
+    
+}
+
+.glbg {
+    background-color: rgb(243, 244, 251);
+
 }
