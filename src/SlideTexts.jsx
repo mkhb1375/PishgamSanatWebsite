@@ -5,7 +5,7 @@ export default function SlideTexts(props) {
     const image = <img src={props.image} alt="image" />;
     const imageContainer = (
         <div
-            className="w-[100vw]   lg:w-[40vw]  hover:cursor-pointer  hover:border-borderColor transition-transform duration-300 transform-gpu hover:scale-105"
+            className="w-[100vw]   lg:w-[40vw]    hover:border-borderColor transition-transform duration-300 transform-gpu hover:scale-105"
         >
             {image}
         </div>
@@ -42,7 +42,7 @@ export default function SlideTexts(props) {
             className={`${isVisible
                     ? `slide-${direction}-show`
                     : `slide-${direction}-hide`
-                } relative   mb-[7vh]     before:content-['']   before:absolute z before:opacity-20  
+                } relative   mb-[7vh]     before:content-['']   before:absolute z before:opacity-10  
             before:bg-[url(https://studio9.co/wp-content/uploads/Twill-05.png)]
              before:bg-repeat before:left-0 before:top-0 before:bottom-0 before:right-0  before:content-[''] txbg
             

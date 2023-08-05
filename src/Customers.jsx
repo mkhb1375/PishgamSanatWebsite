@@ -5,7 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function Customer({ customers, direction }) {
     const settings = {
-        dots: false,
+        dots: true,
+        arrows: false, 
         infinite: true, // Set this to true for continuous movement
         speed: 5000, // Adjust the speed (lower value for lower speed)
         slidesToShow: 3,
@@ -23,7 +24,7 @@ export default function Customer({ customers, direction }) {
     };
 
     return (
-        <div className="mx-auto my-[15vh] text-[1rem] text-center lg:w-[70vw] bg-white">
+        <div className="mx-auto my-[10vh] text-[1rem] text-center lg:w-[70vw] bg-white">
             
 
             <Slider {...settings} className="customer-slider">

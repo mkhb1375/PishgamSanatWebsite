@@ -12,7 +12,7 @@ export default function Header() {
 
          
                 <div className=" relative block w-full  
-            pt-[3vh]
+            
                before:content-[''] 
             before:absolute z before:opacity-30  
             before:bg-[url(https://studio9.co/wp-content/uploads/Twill-05.png)]

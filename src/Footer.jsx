@@ -10,7 +10,7 @@ export default function Footer(){
                 <p className="text-right alight-right  border-b-[1px] border-b-[gray] m-3 p-2 ">اطلاعات تماس</p>
                 
                     <p className="text-right alight-right  border-b-[1px] border-b-[gray] text-[0.8rem] lg:text-[1rem] m-3 p-2 ">
-                        <img className="lg:w-[30px] w-[60px] inline-block  mx-1" src="src/assets/location.png" alt="location" /> <a className="hover:font-bold" target="_blank" href="https://nshn.ir/bb_b1qEOVJAgVY">خراسان رضوی،مشهد،شهرک صنعتی توس، فلزتراشان ۳، پلاک ۴۵ </a> 
+                        <img className="lg:w-[30px] w-[60px] inline-block  mx-1" src="src/assets/location.png" alt="location" /> <a className="hover:font-bold" target="_blank" href="https://nshn.ir/bb_b1qEOVJAgVY">خراسان رضوی، مشهد، شهرک صنعتی توس، فلزتراشان ۳، پلاک ۴۵ </a> 
                       
                        </p>
                 <p className="text-right alight-right   m-3 p-2 ">

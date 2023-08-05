@@ -72,7 +72,7 @@ export default function Body(){
             
             </div>
             <span id="customers" ></span>
-            <h1 className="header-farsi my-[15vh] mx-auto text-[2rem] text-center">برخی از مشتریان</h1>
+            <h1 className="header-farsi py-4 my-[10vh] mx-auto text-[2rem] text-center">برخی از مشتریان</h1>
             <Customer customers={customersData1} />
             <Customer customers={customersData2} direction="rtl" />
 

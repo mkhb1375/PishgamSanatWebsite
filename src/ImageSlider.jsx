@@ -92,13 +92,8 @@ export default function ImageSlider() {
             <span className={`${captionClass} text-[1.5rem] w-[80vw]  lg:w-max`}>
                 {captions[currentSlide]}
             </span>
-            <button className="prev-arrow " onClick={handlePrevClick}>
-                <span style={{ transform: "rotate(-90deg)", display: "inline-block" }} >⌃</span>
-
-            </button>
-            <button className="next-arrow" onClick={handleNextClick}>
-                <span style={{ transform: "rotate(90deg)", display: "inline-block" }} >⌃</span>
-            </button>
+           
+            
         </div>
     );
 }

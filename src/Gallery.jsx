@@ -45,11 +45,83 @@ export default function Gallery() {
         },
         {
             logoUrl: "src/assets/gl3.jpg",
-            companyName: "طراحی و ساخت قالب تزریق پلاستیک قطعات خودرو۲",
+            companyName: "طراحی و ساخت قالب تزریق پلاستیک قطعات خودرو",
         },
         {
             logoUrl: "src/assets/gl4.jpg",
-            companyName: "طراحی و ساخت قالب تزریق پلاستیک قطعات خودرو۳",
+            companyName: "طراحی و ساخت قالب تزریق پلاستیک قطعات خودرو",
+        },
+        {
+            logoUrl: "src/assets/gl5.jpg",
+            companyName: "طراحی و ساخت قالب تزریق پلاستیک قطعات خودرو",
+        },
+        {
+            logoUrl: "src/assets/gl6.jpg",
+            companyName: "طراحی و ساخت قالب تزریق پلاستیک قطعات خودرو",
+        },
+        {
+            logoUrl: "src/assets/gl7.jpg",
+            companyName: "طراحی و ساخت قالب جلو پنجره تیبا",
+        },
+        {
+            logoUrl: "src/assets/gl8.jpg",
+            companyName: "مهندسی معکوس ایمپلر",
+        },
+        {
+            logoUrl: "src/assets/gl9.jpg",
+            companyName: "مهندسی معکوس ایمپلر",
+        },
+        {
+            logoUrl: "src/assets/gl10.jpg",
+            companyName: "مهندسی معکوس سیلندر موتورهای دریایی",
+        },
+        {
+            logoUrl: "src/assets/gl11.jpg",
+            companyName: "مهندسی معکوس مجموعه پمپ",
+        },
+        {
+            logoUrl: "src/assets/gl12.jpg",
+            companyName: "مهندسی معکوس مجموعه جلو پنجره پارس",
+        },
+        {
+            logoUrl: "src/assets/gl13.jpg",
+            companyName: "مهندسی معکوس مجموعه قطعات موتور سیکلت-زیر صندلی",
+        },
+        {
+            logoUrl: "src/assets/gl14.png",
+            companyName: "مهندسی معکوس مجموعه قطعات موتور سیکلت-قاب‌ بغل",
+        },
+        {
+            logoUrl: "src/assets/gl15.jpg",
+            companyName: "مهندسی معکوس مجموعه قطعات موتور سیکلت-قاب‌ بغل",
+        },
+        {
+            logoUrl: "src/assets/gl16.jpg",
+            companyName: "مهندسی معکوس مخزن سوخت تیبا",
+        },
+        {
+            logoUrl: "src/assets/gl17.jpg",
+            companyName: "مهندسی معکوس و طراحی قاب جلو پنجره برلیانس",
+        },
+        {
+            logoUrl: "src/assets/gl18.jpg",
+         
+        },
+        {
+            logoUrl: "src/assets/gl19.jpg",
+           
+        },
+        {
+            logoUrl: "src/assets/gl20.jpg",
+         
+        },
+        {
+            logoUrl: "src/assets/gl21.jpg",
+           
+        },
+        {
+            logoUrl: "src/assets/gl22.jpg",
+            
         },
     ];
 
@@ -81,12 +153,14 @@ export default function Gallery() {
     const handleImageClick = (imageUrl) => {
         setSelectedImage(imageUrl);
         setShowModal(true);
+        document.documentElement.classList.add("lock-scroll");
         sliderRef.current.slickPause(); // Pause the slider when the modal is open
     };
 
     // Function to close the modal
     const closeModal = () => {
         setShowModal(false);
+        document.documentElement.classList.remove("lock-scroll");
         sliderRef.current.slickPlay(); // Resume the slider when the modal is closed
     };
 
@@ -95,7 +169,11 @@ export default function Gallery() {
 
     return (
         <div className={` 
-          text-black my-[10vh] py-[25vh] glbg text-[0.9rem] text-center relative ${showModal && selectedImage ? 'blurred-background' : ''}`}>
+          before:content-['']   before:absolute z before:opacity-10  
+            before:bg-[url(https://studio9.co/wp-content/uploads/Twill-05.png)]
+             before:bg-repeat before:left-0 before:top-0 before:bottom-0 before:right-0  before:content-['']
+
+          text-black my-[10vh] py-[10vh] glbg text-[0.9rem] text-center relative ${showModal && selectedImage ? 'blurred-background' : ''}`}>
             <h1 id="photos" className="header-farsi  p-2 text-[2rem] text-black">گالری تصاویر</h1>
             <h1 className="header-farsi m-1 p-2 text-[0.8rem] text-black">برای بزرگنمایی روی تصاویر کلیک کنید</h1>
 
@@ -111,8 +189,8 @@ export default function Gallery() {
                            
                         >
                             <img
-                                className="block text-center h-[300px] lg:py-0 mx-auto cursor-pointer 
-                                lg:border-[transparent] lg:border-4 lg:hover:border-borderColor rounded mt-5 border-borderColor"
+                                className="block text-center h-[350px] lg:py-0 mx-auto cursor-pointer 
+                                lg:border-[transparent]  mt-2 border-borderColor"
                                 src={customer.logoUrl}
                                 alt={customer.companyName}
                                 style={{ width: "auto",  objectFit: "contain" }}
@@ -129,7 +207,7 @@ export default function Gallery() {
                         onRequestClose={closeModal}
                         contentLabel="Enlarged View"
                         ariaHideApp={false}
-                        className="modal-content absolute top-0 left-0  z-[2] "
+                        className="modal-content absolute top-0 left-0  z-[5] "
                         overlayClassName="modal-overlay"
                     >
                         {/* Overlay to capture clicks and close modal */}
@@ -149,10 +227,11 @@ export default function Gallery() {
                         >
                             </div>
                         <div className="fixed top-[45vh] -translate-y-2/4 left-0
-                         lg:top-[33vh] lg:left-[33vw] lg:-translate-y-1/4 lg:-translate-x-1/4 ">
+                         lg:top-[50vh] lg:left-[33vw] lg:-translate-y-2/4  lg:-translate-x-1/4 
+                         3xl:top-[50vh] 3xl:left-[50vw] 3xl:-translate-y-2/4 3xl:-translate-x-2/4 ">
                            
                             <img
-                                className="full-screen-image mx-auto rounded border-4 lg:border-2  border-borderColor"
+                                className="full-screen-image mx-auto rounded border-4   border-black"
                                 src={selectedImage}
                                 alt="Enlarged View"
                             />
